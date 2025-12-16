@@ -1,56 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/cortexa-vault/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortexa Vault | IT-школа нового поколения</title>
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
     <script type="module" crossorigin src="/cortexa-vault/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/cortexa-vault/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/cortexa-vault/assets/styles-LxhcIevN.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="container header__container">
+      <a href="./#hero" class="header__logo"><span class="header__logo-accent">Cortexa</span> Vault</a>
+      <nav class="header__nav">
+          <ul class="header__list">
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#advantages" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#programs" class="header__link">Программы</a></li>
+          </ul>
+      </nav>
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--small header__btn">Начать сейчас</a>
+          <button class="header__burger" aria-label="Menu">
+              <span></span><span></span><span></span>
+          </button>
+      </div>
   </div>
 </header>
 
+<div class="mobile-menu">
+  <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+          <li class="mobile-menu__item"><a href="./#advantages" class="mobile-menu__link">Преимущества</a></li>
+          <li class="mobile-menu__item"><a href="./#innovation" class="mobile-menu__link">Инновации</a></li>
+          <li class="mobile-menu__item"><a href="./#programs" class="mobile-menu__link">Программы</a></li>
+          <li class="mobile-menu__item"><a href="./#contact" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+          <a href="mailto:hello@cortexa-vault.blog" class="mobile-menu__contact">hello@cortexa-vault.blog</a>
+      </div>
+  </div>
+</div>
 
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas> <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__label">Доступ к платформе открыт</div>
+          <h1 class="hero__title reveal-text">Технология <br> <span class="text-accent">нового поколения</span></h1>
+          <p class="hero__subtitle reveal-text">
+              Откройте новые возможности в IT. Постройте карьеру, которая работает на вас.
+              Инновационная методология обучения уже доступна в Европе.
+          </p>
+          <div class="hero__btns reveal-text">
+              <a href="#contact" class="btn hero__btn">Получить доступ</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+  </div>
+  <div class="hero__scroll-down">
+      <span>Листайте вниз</span>
+      <i data-lucide="arrow-down"></i>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="container">
+      <div class="grid-2">
+          <div class="about__info" data-anim="slide-up">
+              <h2 class="section__title">Решения, которые <br> меняют правила игры</h2>
+              <p class="section__desc">
+                  Cortexa Vault — это не просто курсы. Это цифровая экосистема.
+                  Мы объединили передовую инфраструктуру и AI-инструменты для реальных задач.
+              </p>
+              <ul class="about__list">
+                  <li><i data-lucide="check-circle"></i> Экспертная поддержка на всех этапах</li>
+                  <li><i data-lucide="check-circle"></i> Практики, применимые уже сегодня</li>
+                  <li><i data-lucide="check-circle"></i> Платформа года по версии EdTech France</li>
+              </ul>
+          </div>
+          <div class="about__visual" data-anim="zoom-in">
+              <div class="glass-card">
+                  <i data-lucide="cpu" class="glass-card__icon"></i>
+                  <div class="glass-card__stat">98%</div>
+                  <div class="glass-card__text">Успешных запусков карьеры</div>
+              </div>
+              <div class="glass-card glass-card--secondary">
+                  <i data-lucide="globe" class="glass-card__icon"></i>
+                  <div class="glass-card__text">Работаем по всему ЕС</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="advantages" class="section advantages">
+  <div class="container">
+      <div class="section__header text-center">
+          <h2 class="section__title reveal-text">Почему выбирают нас?</h2>
+          <p class="section__subtitle reveal-text">Стратегия роста на базе инноваций</p>
+      </div>
+
+      <div class="features-grid">
+          <div class="feature-card" data-anim="stagger">
+              <div class="feature-card__icon"><i data-lucide="zap"></i></div>
+              <h3 class="feature-card__title">Быстрый старт</h3>
+              <p class="feature-card__text">Легко разобраться без опыта. Подключение к процессам занимает 2 минуты.</p>
+          </div>
+          <div class="feature-card" data-anim="stagger">
+              <div class="feature-card__icon"><i data-lucide="trending-up"></i></div>
+              <h3 class="feature-card__title">Программа роста</h3>
+              <p class="feature-card__text">Технология для пассивного развития навыков и карьерного апгрейда.</p>
+          </div>
+          <div class="feature-card" data-anim="stagger">
+              <div class="feature-card__icon"><i data-lucide="shield-check"></i></div>
+              <h3 class="feature-card__title">Надежность</h3>
+              <p class="feature-card__text">Проверенный партнер. Методологии, доказавшие свою эффективность.</p>
+          </div>
+          <div class="feature-card" data-anim="stagger">
+              <div class="feature-card__icon"><i data-lucide="users"></i></div>
+              <h3 class="feature-card__title">Комьюнити</h3>
+              <p class="feature-card__text">Переосмыслите подход к развитию вместе с единомышленниками.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="innovation" class="section innovation">
+  <div class="innovation__bg"></div>
+  <div class="container innovation__container">
+      <div class="innovation__content" data-anim="slide-up">
+          <h2 class="section__title">Инновационная технология</h2>
+          <p class="section__desc">
+              Наши алгоритмы подбирают программу обучения индивидуально под ваш психотип и цели.
+              Воплотите мечты в реальность с помощью AI.
+          </p>
+          <a href="#contact" class="btn btn--white">Оценить перспективы</a>
+      </div>
+  </div>
+  <div class="marquee">
+      <div class="marquee__content">
+          <span>AI-Driven Learning</span>
+          <span>Machine Learning</span>
+          <span>Big Data Analysis</span>
+          <span>Neural Networks</span>
+          <span>Cyber Security</span>
+          <span>Cloud Computing</span>
+          <span>AI-Driven Learning</span>
+          <span>Machine Learning</span>
+      </div>
+  </div>
+</section>
+
+<section id="programs" class="section programs">
+  <div class="container">
+      <h2 class="section__title text-center mb-60">Актуальные направления</h2>
+      <div class="programs__grid">
+          <div class="program-card" data-anim="fade">
+              <div class="program-card__image">
+                  <div class="img-mockup" style="background: linear-gradient(45deg, #4f46e5, #ec4899);"></div>
+              </div>
+              <div class="program-card__content">
+                  <span class="program-card__tag">Хит</span>
+                  <h3>Full-Stack Разработка</h3>
+                  <p>Создание современных веб-приложений с нуля.</p>
+                  <a href="#contact" class="program-card__link">Подробнее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </div>
+          <div class="program-card" data-anim="fade">
+              <div class="program-card__image">
+                  <div class="img-mockup" style="background: linear-gradient(45deg, #10b981, #3b82f6);"></div>
+              </div>
+              <div class="program-card__content">
+                  <span class="program-card__tag">AI</span>
+                  <h3>Data Science & ML</h3>
+                  <p>AI-инструменты для реальных задач бизнеса.</p>
+                  <a href="#contact" class="program-card__link">Подробнее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </div>
+          <div class="program-card" data-anim="fade">
+              <div class="program-card__image">
+                  <div class="img-mockup" style="background: linear-gradient(45deg, #f59e0b, #ef4444);"></div>
+              </div>
+              <div class="program-card__content">
+                  <span class="program-card__tag">Security</span>
+                  <h3>Кибербезопасность</h3>
+                  <p>Защита цифровой инфраструктуры.</p>
+                  <a href="#contact" class="program-card__link">Подробнее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="container">
+      <div class="contact__wrapper">
+          <div class="contact__info" data-anim="slide-right">
+              <h2 class="section__title">Начать сейчас</h2>
+              <p class="section__desc">
+                  Оставьте заявку на бесплатную консультацию. Наш менеджер свяжется с вами в ближайшее время.
+              </p>
+              <div class="contact__details">
+                  <div class="contact__item">
+                      <i data-lucide="map-pin"></i>
+                      <div>
+                          <h4>Офис</h4>
+                          <p>32 Rue du Faubourg Saint-Honoré, 75008 Paris</p>
+                      </div>
+                  </div>
+                  <div class="contact__item">
+                      <i data-lucide="mail"></i>
+                      <div>
+                          <h4>Email</h4>
+                          <p>hello@cortexa-vault.blog</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <form class="contact__form" id="leadForm" data-anim="slide-left" novalidate>
+              <div class="form-group">
+                  <label for="name">Имя</label>
+                  <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                  <span class="error-msg">Введите имя</span>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                  <span class="error-msg">Некорректный email</span>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+33..." required>
+                  <span class="error-msg">Только цифры, минимум 10</span>
+              </div>
+
+              <div class="form-group captcha-group">
+                  <label id="captchaLabel">Сколько будет 5 + 3?</label>
+                  <input type="number" id="captchaInput" required>
+                  <span class="error-msg">Неверный ответ</span>
+              </div>
+
+              <div class="form-checkbox">
+                  <input type="checkbox" id="policy" required>
+                  <label for="policy">Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a></label>
+              </div>
+
+              <button type="submit" class="btn btn--full">Отправить заявку</button>
+              <div class="form-success" id="formSuccess">
+                  <i data-lucide="check-circle"></i>
+                  <span>Заявка успешно отправлена!</span>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="./#hero" class="footer__logo">Cortexa Vault</a>
+              <p class="footer__desc">
+                  Инновационная технология обучения. <br>
+                  Экспертная поддержка на всех этапах вашего роста в IT.
+              </p>
+              <div class="footer__copyright">
+                  &copy; 2025 Cortexa Vault. Все права защищены.
+              </div>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__list">
+                  <li><a href="./#hero" class="footer__link">Главная</a></li>
+                  <li><a href="./#about" class="footer__link">О школе</a></li>
+                  <li><a href="./#advantages" class="footer__link">Преимущества</a></li>
+                  <li><a href="./#programs" class="footer__link">Программы</a></li>
+                  <li><a href="./#contact" class="footer__link">Контакты</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Правовая информация</h3>
+              <ul class="footer__list">
+                  <li><a href="./privacy.html" class="footer__link">Privacy Policy</a></li>
+                  <li><a href="./cookies.html" class="footer__link">Cookie Policy</a></li>
+                  <li><a href="./terms.html" class="footer__link">Terms of Use</a></li>
+                  <li><a href="./return.html" class="footer__link">Return Policy</a></li>
+                  <li><a href="./disclaimer.html" class="footer__link">Disclaimer</a></li>
+                  <li><a href="./personal-data-policy.html" class="footer__link">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__list footer__list--contacts">
+                <li class="footer__contact-item">
+                    <i data-lucide="phone" class="footer__icon"></i>
+                    <span>+33 1 45 20 18 30</span>
+                </li>
+                <li class="footer__contact-item">
+                    <i data-lucide="mail" class="footer__icon"></i>
+                    <a href="mailto:hello@cortexa-vault.blog">hello@cortexa-vault.blog</a>
+                </li>
+                <li class="footer__contact-item">
+                    <i data-lucide="map-pin" class="footer__icon"></i>
+                    <span>32 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+                </li>
+            </ul>
+        </div>
+      </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--small" id="acceptCookie">Принять</button>
+      </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
   </body>
 </html>

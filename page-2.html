@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/cortexa-vault/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/cortexa-vault/assets/styles-LxhcIevN.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="container header__container">
+      <a href="./#hero" class="header__logo"><span class="header__logo-accent">Cortexa</span> Vault</a>
+      <nav class="header__nav">
+          <ul class="header__list">
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#advantages" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#programs" class="header__link">Программы</a></li>
+          </ul>
+      </nav>
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--small header__btn">Начать сейчас</a>
+          <button class="header__burger" aria-label="Menu">
+              <span></span><span></span><span></span>
+          </button>
+      </div>
   </div>
 </header>
 
+<div class="mobile-menu">
+  <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+          <li class="mobile-menu__item"><a href="./#advantages" class="mobile-menu__link">Преимущества</a></li>
+          <li class="mobile-menu__item"><a href="./#innovation" class="mobile-menu__link">Инновации</a></li>
+          <li class="mobile-menu__item"><a href="./#programs" class="mobile-menu__link">Программы</a></li>
+          <li class="mobile-menu__item"><a href="./#contact" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+          <a href="mailto:hello@cortexa-vault.blog" class="mobile-menu__contact">hello@cortexa-vault.blog</a>
+      </div>
+  </div>
+</div>
 
     <main>
       <div class="container">
@@ -39,19 +53,60 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="./#hero" class="footer__logo">Cortexa Vault</a>
+              <p class="footer__desc">
+                  Инновационная технология обучения. <br>
+                  Экспертная поддержка на всех этапах вашего роста в IT.
+              </p>
+              <div class="footer__copyright">
+                  &copy; 2025 Cortexa Vault. Все права защищены.
+              </div>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__list">
+                  <li><a href="./#hero" class="footer__link">Главная</a></li>
+                  <li><a href="./#about" class="footer__link">О школе</a></li>
+                  <li><a href="./#advantages" class="footer__link">Преимущества</a></li>
+                  <li><a href="./#programs" class="footer__link">Программы</a></li>
+                  <li><a href="./#contact" class="footer__link">Контакты</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Правовая информация</h3>
+              <ul class="footer__list">
+                  <li><a href="./privacy.html" class="footer__link">Privacy Policy</a></li>
+                  <li><a href="./cookies.html" class="footer__link">Cookie Policy</a></li>
+                  <li><a href="./terms.html" class="footer__link">Terms of Use</a></li>
+                  <li><a href="./return.html" class="footer__link">Return Policy</a></li>
+                  <li><a href="./disclaimer.html" class="footer__link">Disclaimer</a></li>
+                  <li><a href="./personal-data-policy.html" class="footer__link">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__list footer__list--contacts">
+                <li class="footer__contact-item">
+                    <i data-lucide="phone" class="footer__icon"></i>
+                    <span>+33 1 45 20 18 30</span>
+                </li>
+                <li class="footer__contact-item">
+                    <i data-lucide="mail" class="footer__icon"></i>
+                    <a href="mailto:hello@cortexa-vault.blog">hello@cortexa-vault.blog</a>
+                </li>
+                <li class="footer__contact-item">
+                    <i data-lucide="map-pin" class="footer__icon"></i>
+                    <span>32 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+                </li>
+            </ul>
+        </div>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>
