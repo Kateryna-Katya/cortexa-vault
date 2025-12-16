@@ -537,7 +537,7 @@ img {
 }
 .glass-card--secondary {
     z-index: 1;
-    top: 50%;
+    top: 75%;
     right: 20px;
     background: rgba(99, 102, 241, 0.1);
 }
