@@ -1,19 +1,34 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="container header__container">
+      <a href="./#hero" class="header__logo"><span class="header__logo-accent">Cortexa</span> Vault</a>
+      <nav class="header__nav">
+          <ul class="header__list">
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#advantages" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#programs" class="header__link">Программы</a></li>
+          </ul>
+      </nav>
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--small header__btn">Начать сейчас</a>
+          <button class="header__burger" aria-label="Menu">
+              <span></span><span></span><span></span>
+          </button>
+      </div>
   </div>
 </header>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+          <li class="mobile-menu__item"><a href="./#advantages" class="mobile-menu__link">Преимущества</a></li>
+          <li class="mobile-menu__item"><a href="./#innovation" class="mobile-menu__link">Инновации</a></li>
+          <li class="mobile-menu__item"><a href="./#programs" class="mobile-menu__link">Программы</a></li>
+          <li class="mobile-menu__item"><a href="./#contact" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+          <a href="mailto:hello@cortexa-vault.blog" class="mobile-menu__contact">hello@cortexa-vault.blog</a>
+      </div>
+  </div>
+</div>
